@@ -72,14 +72,13 @@
    `(link-visited ((t (:foreground ,color-middle :underline t))))
    `(button ((t (:background ,color-bright :underline t :foreground nil))))
    `(header-line ((t (:background ,color-light :foreground ,color-fg))))
-   `(shadow ((t (:foreground ,color-light))))
+   `(shadow ((t (:foreground ,color-middle))))
    `(show-paren-match ((t (:background ,color-dark :foreground ,color-bg))))
    `(show-paren-mismatch ((t (:background ,color-bright
                               :foreground ,color-fg))))
    `(highlight ((t (:inverse-video nil :background ,color-bright))))
    `(hl-line ((t (:inverse-video nil :background ,color-light))))
    `(widget-field ((t (:background ,color-bright))))
-   `(flymake-error ((t (:underline (:style wave :color ,color-middle)))))
 
    ;; Faces for specific prog modes
    `(sh-heredoc ((t (:foreground nil :inherit font-lock-string-face))))
@@ -320,6 +319,10 @@
    `(lsp-headerline-breadcrumb-path-error-face
      ((t (:underline nil :background ,color-bright))))
    `(lsp-headerline-breadcrumb-separator-face ((t (:foreground ,color-fg))))
+
+   ;; Flymake
+   `(flymake-error ((t (:underline (:style wave :color ,color-bright)))))
+   `(flymake-warning ((t (:underline (:style wave :color ,color-middle)))))
    ))
 
 (provide-theme 'notink)

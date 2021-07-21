@@ -1,5 +1,5 @@
-;; -*- lexical-binding: t; -*-
 ;;; notink-theme.el --- A custom theme inspired by e-ink displays
+;; -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2021 MetroWind.
 
@@ -11,9 +11,9 @@
 
 ;; Author: MetroWind <chris.corsair@gmail.com>
 ;; URL: https://github.com/MetroWind/notink-theme
-;; Keywords: theme
+;; Keywords: faces
 ;; Version: 1.0
-;; Package-Requires: ((emacs "24"))
+;; Package-Requires: ((emacs "26.1"))
 
 ;;; Commentary:
 ;;
@@ -320,8 +320,7 @@
 
    ;; Flymake
    `(flymake-error ((t (:underline (:style wave :color ,color-bright)))))
-   `(flymake-warning ((t (:underline (:style wave :color ,color-middle)))))
-   ))
+   `(flymake-warning ((t (:underline (:style wave :color ,color-middle)))))))
 
 ;;;###autoload
 (and load-file-name

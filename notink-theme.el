@@ -1,3 +1,4 @@
+;; -*- lexical-binding: t; -*-
 ;;; notink-theme.el --- A custom theme inspired by e-ink displays
 
 ;; Copyright (C) 2021 MetroWind.
@@ -10,7 +11,7 @@
 
 ;; Author: MetroWind <chris.corsair@gmail.com>
 ;; URL: https://github.com/MetroWind/notink-theme
-;; Keywords: lisp
+;; Keywords: theme
 ;; Version: 1.0
 ;; Package-Requires: ((emacs "24"))
 
@@ -24,16 +25,13 @@
 (deftheme notink "A custom theme inspired by e-ink displays")
 
 ;; Colors
-(let*
-    (
-     (color-fg "#4c5256")
-     (color-bg "#c4cdd3")
-     (color-bright "#ffffff")
-     (color-black "#35393b")
-     (color-dark "#616b72")
-     (color-middle "#83919a")
-     (color-light "#a9b5bd")
-     )
+(let* ((color-fg "#4c5256")
+       (color-bg "#c4cdd3")
+       (color-bright "#ffffff")
+       (color-black "#35393b")
+       (color-dark "#616b72")
+       (color-middle "#83919a")
+       (color-light "#a9b5bd"))
 
   (custom-theme-set-faces
    'notink
@@ -324,6 +322,10 @@
    `(flymake-error ((t (:underline (:style wave :color ,color-bright)))))
    `(flymake-warning ((t (:underline (:style wave :color ,color-middle)))))
    ))
+
+;;;###autoload
+(add-to-list 'custom-theme-load-path
+             (file-name-directory load-file-name))
 
 (provide-theme 'notink)
 

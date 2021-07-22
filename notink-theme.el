@@ -1,5 +1,4 @@
-;;; notink-theme.el --- A custom theme inspired by e-ink displays
-;; -*- lexical-binding: t; -*-
+;;; notink-theme.el --- A custom theme inspired by e-ink displays -*- lexical-binding: t -*-
 
 ;; Copyright (C) 2021 MetroWind.
 

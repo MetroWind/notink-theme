@@ -319,7 +319,11 @@
 
    ;; Flymake
    `(flymake-error ((t (:underline (:style wave :color ,color-bright)))))
-   `(flymake-warning ((t (:underline (:style wave :color ,color-middle)))))))
+   `(flymake-warning ((t (:underline (:style wave :color ,color-middle)))))
+
+   ;; Flycheck
+   `(flycheck-error ((t (:inherit flymake-error))))
+   `(flycheck-warning ((t (:inherit flymake-warning))))))
 
 ;;;###autoload
 (and load-file-name

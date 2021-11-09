@@ -323,7 +323,10 @@
 
    ;; Flycheck
    `(flycheck-error ((t (:inherit flymake-error))))
-   `(flycheck-warning ((t (:inherit flymake-warning))))))
+   `(flycheck-warning ((t (:inherit flymake-warning))))
+
+   ;; Mail
+   `(message-separator ((t (:foreground ,color-middle))))))
 
 ;;;###autoload
 (and load-file-name

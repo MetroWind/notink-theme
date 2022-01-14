@@ -326,7 +326,10 @@
    `(flycheck-warning ((t (:inherit flymake-warning))))
 
    ;; Mail
-   `(message-separator ((t (:foreground ,color-middle))))))
+   `(message-separator ((t (:foreground ,color-middle))))
+
+   ;; Eglot
+   `(eglot-mode-line ((t (:inherit sml/global))))))
 
 ;;;###autoload
 (and load-file-name

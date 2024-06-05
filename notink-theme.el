@@ -332,8 +332,12 @@
    `(flymake-warning ((t (:underline (:style wave :color ,color-middle)))))
 
    ;; Flycheck
-   `(flycheck-error ((t (:inherit flymake-error))))
-   `(flycheck-warning ((t (:inherit flymake-warning))))
+   `(flycheck-error ((t (:underline (:style wave :color ,color-bright)))))
+   `(flycheck-warning ((t (:underline (:style wave :color ,color-middle)))))
+
+   ;; Flyspell
+   `(flyspell-duplicate ((t (:underline (:style wave :color ,color-middle)))))
+   `(flyspell-incorrect ((t (:underline (:style wave :color ,color-bright)))))
 
    ;; Mail
    `(message-separator ((t (:foreground ,color-middle))))

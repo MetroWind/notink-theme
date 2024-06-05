@@ -40,6 +40,7 @@
                  :foreground ,color-bg))))
    `(region ((t (:background ,color-fg
                  :foreground ,color-bg))))
+   `(secondary-selection ((t (:background ,color-light))))
    `(mode-line ((t (:background ,color-dark
                     :foreground ,color-bg
                     :box nil))))
@@ -265,6 +266,15 @@
    `(org-block-begin-line ((t (:inherit font-lock-comment-face))))
    `(org-block-end-line ((t (:inherit font-lock-comment-face))))
    `(org-archived ((t (:foreground ,color-middle))))
+   `(org-warning ((t (:background ,color-bright))))
+
+   `(org-agenda-structure ((t (:foreground ,color-dark))))
+   `(org-agenda-done ((t (:foreground ,color-middle))))
+   `(org-scheduled-today ((t (:foreground nil :inherit default))))
+   `(org-scheduled-previously ((t (:foreground nil :inherit italic))))
+   `(org-upcoming-deadline ((t (:foreground ,color-dark :inherit italic))))
+   `(org-scheduled ((t (:foreground nil :inherit org-scheduled-today))))
+   `(org-time-grid ((t (:foreground ,color-middle))))
 
    ;; org-tree-slide
    `(org-tree-slide-header-overlay-face

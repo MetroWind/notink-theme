@@ -49,6 +49,8 @@
                              :foreground ,color-bg))))
    `(fringe ((t (:background ,color-bg))))
    `(minibuffer-prompt ((t (:inherit italic :foreground ,color-dark))))
+   `(warning ((t (:foreground ,color-fg :background ,color-bright
+                  :weight unspecified))))
    `(font-lock-builtin-face ((t (:foreground ,color-dark))))
    `(font-lock-comment-face ((t (:inherit italic :foreground ,color-middle))))
    `(font-lock-doc-face ((t (:inherit font-lock-comment-face))))
